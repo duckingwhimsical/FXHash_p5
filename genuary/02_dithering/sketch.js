@@ -25,7 +25,7 @@ function randminmax(min, max)
 
 
 function setup() {
-  background(0);
+  background(250);
 
   seed = Math.floor(fxrand() * 100000000); // FXHASH seed rand
   Math.random.seed = seed;
@@ -33,6 +33,8 @@ function setup() {
 
   createCanvas(innerWidth-1, innerHeight-1);
   colorMode(HSB);
+
+  background(250);
   
   // Set text characteristics
   textFont(font);
@@ -42,7 +44,14 @@ function setup() {
   this.totalCount = 0;
 }
 
+let one = 1
 function draw() {
+  if (one <= 200) {
+    one = one+1;
+    background(250);
+    fill(250)
+    rect(0, 0, innerWidth, innerHeight);
+  }
 
   if (this.totalCount >= 10000) {
     return;

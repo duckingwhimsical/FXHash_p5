@@ -40,15 +40,9 @@
         let diff = max - min;
         return (fxrand() * diff) + min;
       }
-      
-      window.word1 = window.wordsList[Math.floor(fxrand() * window.wordsList.length)];
-      window.word2 = window.wordsList[Math.floor(fxrand() * window.wordsList.length)];
 
-      window.angleRotate = fxrand() * 90;
-      window.angleRotate2 = fxrand() * 90;
-
-        window.col1 = [Math.round(randminmax(0, 255)), Math.round(randminmax(0,255)), Math.round(randminmax(100,255))];
-        window.col1Name = colorName(window.col1);
+      window.col1 = [Math.round(randminmax(0, 255)), Math.round(randminmax(0,255)), Math.round(randminmax(100,255))];
+      window.col1Name = colorName(window.col1);
 
       // FX Features
       window.$fxhashFeatures = {
